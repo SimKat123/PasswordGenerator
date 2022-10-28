@@ -9,7 +9,6 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 function generatePassword() {
@@ -26,28 +25,41 @@ function generatePassword() {
     window.alert ("The passowrd needs to be between 8 to 128 characters.");
     generatePassword() 
   } else {
-    var uppercaseinput= window.confirm("Okay! Would you like UPPER case letters in your password?");
-    var lowercaseinput= window.confirm("What about LOWER case letters?");
-    var numberinput= window.confirm("NUMBERS?");
-    var specialinput= window.confirm("And lastly, SPECIAL CHARACTERS?");
+    var uppercaseInput= window.confirm("Okay! Would you like UPPER case letters in your password?");
+    var lowercaseInput= window.confirm("What about LOWER case letters?");
+    var numberInput= window.confirm("NUMBERS?");
+    var specialsInput= window.confirm("And lastly, SPECIAL CHARACTERS?");
 
-    // if else statement for when they pick their characters.
-    if (uppercaseinput) {
-      input
-    } else (uppercaseinput)
-    // Upper case randomization
-      function uppercaserando () {
-        
-      }
-    // Lower case radomization
+    // if  statement for when they pick their characters.
+    if (uppercaseInput) {
+      input= uppercase;
+    }
 
-    // Numbers randomization
+    if (lowercaseInput) {
+      input= lowercase;
+    }
 
-    // Special Character randomization
+    if (numberInput) {
+      input= numbers;
+    }
 
+    if (specialsInput) {
+      input= specials;
+    }
+
+    // alert if nothing is chosen
+    if (!uppercaseInput, !lowercaseInput, !numberInput, !specialsInput) {
+      window.alert ("You have to pick at least one criteria!");
+      generatePassword()
+    }
+
+    // randomization
+    for (var i=0; i < input.length; i++) {
+      var random= Math.floor(Math.random() * input);
+      password= input[random];
+    }
   }
-    // loop for repeat characters
-return 
+return
 }
 
 // Add event listener to generate button
