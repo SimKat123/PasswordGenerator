@@ -1,10 +1,21 @@
 # Password Generator
 
+## Description
 
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
+A website to help user generate a strong password that is able to customize the password at the users discretion, in terms of Uppercase Characters, Lowercase Characters, Numbers, and some select Special Characters. 
 
+## Installation
 
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
+N/A
+
+## Usage
+
+Open through any internet browser and click the Generate Button to start the process of creating a new password.
+
+## Credits
+
+N/A
+
+## License
+
+Please refer to the LICENSE in the repo.
