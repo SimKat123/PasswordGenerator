@@ -37,10 +37,6 @@ function generatePassword() {
     if (specialsInput) {
       input.push(...specials);
     }
-
-    if (!uppercaseInput && !lowercaseInput && !numberInput && specialsInput) {
-      input= specials;
-    }
     
     // alert if nothing is chosen
     if (!uppercaseInput && !lowercaseInput && !numberInput && !specialsInput) {
